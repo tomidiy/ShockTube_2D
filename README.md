@@ -17,20 +17,20 @@ The simulation models the evolution of density, velocity, and pressure in a 2D d
 
 ## Installation
 1. **Clone the repository**:
-   ```bash
+```bash
    git clone https://github.com/[your-username]/shock_tube_2d.git
    cd shock_tube_2d
-   ```
+```
 
 2. **Install dependencies**:
-   ```bash
-      pip install -r requirements.txt
-   ```
+```bash
+   pip install -r requirements.txt
+```
 
 ## Usage
 - Run the simulation using the main script:
 ```bash
-    python src/main.py
+   python src/main.py
 ```
 - Outputs: `.npz` files in results/ containing density, x-velocity, y-velocity, and pressure fields at specified intervals.
   PNG contour plots in `results/` visualizing the fields.
@@ -62,8 +62,8 @@ shock_tube_2d/
 ```
 
 Example OutputAfter running, check `results/` for: 
--Data: `fields_t0.010.npz`, `fields_t0.020.npz`, etc., with arrays for `ρ`, `u`, `v`, `p`.
--Plots: `figure_t0.010.png`, etc., showing 2x2 contour plots of density, x-velocity, y-velocity, and pressure.
+- Data: `fields_t0.010.npz`, `fields_t0.020.npz`, etc., with arrays for `ρ`, `u`, `v`, `p`.
+- Plots: `figure_t0.010.png`, etc., showing 2x2 contour plots of density, x-velocity, y-velocity, and pressure.
 
 ## Contributing
 Contributions are welcome! Please:
