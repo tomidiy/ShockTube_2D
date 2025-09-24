@@ -65,7 +65,7 @@ Example OutputAfter running, check `results/` for:
 -Data: `fields_t0.010.npz`, `fields_t0.020.npz`, etc., with arrays for `ρ`, `u`, `v`, `p`.
 -Plots: `figure_t0.010.png`, etc., showing 2x2 contour plots of density, x-velocity, y-velocity, and pressure.
 
-##Contributing
+## Contributing
 Contributions are welcome! Please:
 - Fork the repository.
 - Create a feature branch (git checkout -b feature-name).
@@ -73,10 +73,10 @@ Contributions are welcome! Please:
 - Push to the branch (git push origin feature-name).
 - Open a pull request.
 
-##License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-##Acknowledgments
+## Acknowledgments
 - Inspired by computational fluid dynamics literature, particularly Toro's `Riemann Solvers and Numerical Methods for Fluid Dynamics`.
 - Built with NumPy and Matplotlib for numerical and visualization support.
 
