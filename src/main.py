@@ -14,7 +14,7 @@ gamma = 1.4  # Specific heat ratio
 
 def main():
     # Setup grid and initial conditions
-    x, y, X, Y, u, dx, dy, gamma = setup_grid(nx, ny, Lx, Ly)
+    x, y, X, Y, u, dx, dy, gamma, rho_range, uvel_range, vvel_range, p_range = setup_grid(nx, ny, Lx, Ly)
     
     # Time-stepping loop
     t = 0.0
@@ -68,6 +68,9 @@ def main():
         # Output results
         if t >= next_output_time - 1e-10:
             save_output(u, t, X, Y, gamma)
+            save_output(u, t, X, Y, gamma=gamma, results_dir="results",\
+                            rho_range=rho_range, uvel_range=uvel_range, \
+                                vvel_range=vvel_range, p_range=p_range)
             next_output_time += output_interval
 
 if __name__ == "__main__":
