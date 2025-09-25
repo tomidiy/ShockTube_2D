@@ -8,6 +8,11 @@ def setup_grid(nx=200, ny=200, Lx=1.0, Ly=1.0):
     y = np.linspace(0.5 * dy, Ly - 0.5 * dy, ny)
     X, Y = np.meshgrid(x, y, indexing='xy')
     
+    rho_range = (min(rho_L, rho_R), max(rho_L, rho_R))
+    uvel_range = (-0.5, 0.5)    # pick expected range
+    vvel_range = (-0.5, 0.5)
+    p_range = (min(p_L, p_R), max(p_L, p_R))
+
     # Conservative variables: [rho, rho*u, rho*v, E]
     u = np.zeros((4, nx, ny))
     
@@ -27,4 +32,4 @@ def setup_grid(nx=200, ny=200, Lx=1.0, Ly=1.0):
             u[2, i, j] = rho * vv
             u[3, i, j] = p / (gamma - 1) + 0.5 * rho * (uu**2 + vv**2)
     
-    return x, y, X, Y, u, dx, dy, gamma
+    return x, y, X, Y, u, dx, dy, gamma, rho_range, uvel_range, vvel_range, p_range
