@@ -18,7 +18,7 @@ The simulation models the evolution of density, velocity, and pressure in a 2D d
 ## Installation
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/[your-username]/shock_tube_2d.git
+   git clone https://github.com/tomidiy/shock_tube_2d.git
    cd shock_tube_2d
 ```
 
