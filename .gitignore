@@ -3,8 +3,4 @@
 __pycache__/
 *.pyc
 *.npz
-<<<<<<< HEAD
 *DS_Store
-=======
-*.DS_Store
->>>>>>> origin/main
